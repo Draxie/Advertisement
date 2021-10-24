@@ -57,7 +57,10 @@ let ps = document.getElementById('ps')
       discount.innerHTML='-25%'
       discount.style.marginRight='42px'
     }
-    else discount.innerHTML= '25% discount'
+    else {
+        discount.style.marginRight='0px'
+        discount.innerHTML= '25% discount'
+    }
 }, true);
 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -65,5 +68,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         discount.innerHTML='-25%'
         discount.style.marginRight='42px'
       }
-    else discount.innerHTML= '25% discount'
+    else {
+        discount.style.marginRight='0px'
+        discount.innerHTML= '25% discount'
+    }
 });
