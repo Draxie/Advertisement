@@ -137,7 +137,8 @@ body {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "views price" "slider slider";
+      grid-template-areas: "views price"
+ "slider slider";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -145,15 +146,11 @@ body {
 }
 
 .wrapper .billing .pricing .views {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: views;
   color: var(--text);
 }
 
 .wrapper .billing .pricing span {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: price;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,8 +178,6 @@ body {
 }
 
 .wrapper .billing .pricing .slider {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: slider;
   height: 8px;
@@ -426,7 +421,9 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: 33% 1fr 1fr;
         grid-template-rows: 33% 1fr 1fr;
-        grid-template-areas: "views" "slider" "price";
+        grid-template-areas: "views"
+ "slider"
+ "price";
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
